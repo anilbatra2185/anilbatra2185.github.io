@@ -235,19 +235,20 @@
 										these steps in natural language. We refer to this task as Procedure Segmentation and
 										Summarization (PSS). In this paper, we take a closer look at PSS and propose three
 										fundamental improvements over current methods. The segmentation task is critical, as
-										generating a correct summary requires the step to be identified first. However, current
-										segmentation metrics often overestimate the segmentation quality because they do not
-										incorporate the temporal order of segments. We propose a new segmentation metric
-										based on dynamic programming that takes into account the order of segments. Current 
+										generating a correct summary requires each step of the procedure to be correctly identified. 
+										However, current segmentation metrics often overestimate the segmentation quality
+										because they do not consider the temporal order of segments. In our first contribution,
+										we propose a new segmentation metric that takes into account the order of segments,
+										giving a more reliable measure of the accuracy of a given predicted segmentation. Current 
 										PSS methods are typically trained by proposing segments, matching them with the
 										ground truth and computing a loss. However, much like segmentation metrics, existing
 										matching algorithms do not consider the temporal order of the mapping between candidate 
-										segments and the ground truth. We propose a matching algorithm that constrains
-										the temporal order of segment mapping, and is also differentiable. Lastly, we introduce
-										multi-modal feature training for PSS, which further improves segmentation. We evaluate 
-										our approach on two instructional video datasets (YouCook2 and Tasty) and improve
-										the state of the art by a margin of ∼7% and ∼2.5% for procedure segmentation and
-										summarization, respectively</p>
+										segments and the ground truth. In our second contribution, we propose a matching
+										algorithm that constrains the temporal order of segment mapping, and is also differentiable. 
+										Lastly, we introduce multi-modal feature training for PSS, which further improves
+										segmentation. We evaluate our approach on two instructional video datasets (YouCook2
+										and Tasty) and observe an improvement over the state-of-the-art of ∼ 7% and ∼ 2.5%
+										for procedure segmentation and summarization, respectively.</p>
 									<p style="margin:0px 0px 0px 0px;"></p>
 								</div>
 								<p style="margin:1px 0px 0px 0px;"></p>
