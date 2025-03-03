@@ -156,7 +156,7 @@
 				
 				<p align="center" style="color:#001affbc">
 					<img src="images/blue_arrow_right.png" width="50px" height="30px" style="border-style: none"> 
-					<strong style="font-size:larger;">Currently looking for reserch internships (Early 2025) and PostDocs (Winter 2025).</blink>
+					<strong style="font-size:larger;">Looking for Full-time Research Positions.</blink>
 					<img src="images/blue_arrow_left.png" width="50px" height="30px" style="border-style: none"> 
 				</p>
 
@@ -219,6 +219,58 @@
 
 				<table width="70%" align="center">
 					<tr>
+						<td width="25%" valign="top" align="center"><a href="images/implicit_vid_srl.png">
+								<img src="images/implicit_vid_srl.png" alt="sym" width="80%"
+									style="border-style: none"></a></td>
+						<td width="75%" valign="top">
+							<p><a href="#" id="im2025">
+									<img src="images/new.png" alt="[NEW]" width="50px" height="30px" style="border-style: none">
+									<heading>Predicting Implicit Arguments in Procedural Video Instructions</heading>
+								</a><br>
+								<strong>Anil Batra</strong>, Laura Sevilla-Lara, Marcus Rohrbach, Frank Keller<br>
+								<em>Under Review (2025)</em><br>
+							</p>
+							<div class="paper" id="im2025">
+								<!-- <a href="https://arxiv.org/pdf/2311.15964.pdf" target="" class="buttonTT">pdf</a> -->
+								<!-- <a href="#" target="" class="buttonTT">suppl</a> -->
+								<a data-toggle="collapse" data-parent="#im2025" href="#im2025_abstract-list"
+									class="buttonAA">abstract</a>
+								<!-- <a shape="rect" data-parent="#im2025" data-toggle="collapse" href="#im2025-list"
+									class="buttonSS">bibtex</a> -->
+								<br> 
+
+								<div id="im2025_abstract-list" class="panel-collapse collapse out"
+									style="background-color:#ADEBFF; padding:9px 2.5% 3px 2.5%; border-radius:10px;">
+									<p style="margin:0px 0px 0px 0px;"></p>
+										<p style="font-size:14.1px; text-align: justify;">
+											Procedural texts help AI enhance reasoning about context and action sequences. Transforming these into Semantic Role Labeling (SRL) improves understanding of individual steps by identifying predicate-argument structure like 
+											{<span style="color: #F28C28;">verb</span>, <span style="color: green;">what</span>, <span style="color: purple;">where/with</span>}. 
+											Procedural instructions are highly elliptic, for instance, (i) <em>add cucumber to the bowl</em> and (ii) <em>add sliced tomatoes</em>, the second step's <span style="color: purple;">where</span> argument is inferred from the context, 
+											referring to where the cucumber was placed. Prior SRL benchmarks often miss implicit arguments, leading to incomplete understanding. To address this, we introduce <em>Implicit-VidSRL</em>, a dataset that
+											necessitates inferring implicit and explicit arguments from contextual information in multimodal cooking procedures. Our proposed dataset benchmarks multimodal models' contextual reasoning, requiring entity 
+											tracking through visual changes in recipes. We study recent multimodal LLMs and reveal that they struggle to predict implicit arguments of <span style="color: green;">what</span> and <span style="color: purple;">where/with</span> from multimodal procedural data given the <span style="color: #F28C28;">verb</span>. 
+											Lastly, we propose <em>iSRL-Qwen2-VL</em>, which achieves a 17% relative improvement in F1-score for <span style="color: green;">what-implicit</span> and a 14.7% for <span style="color: purple;">where/with-implicit</span> semantic roles
+											over GPT-4o.
+										</p>
+									<p style="margin:0px 0px 0px 0px;"></p>
+								</div>
+								<p style="margin:1px 0px 0px 0px;"></p>
+								<div id="im2025-list" class="panel-collapse collapse out"
+									style="background-color:#FFE0C2; padding:0% 3% 1% 3%; border-radius:10px;">
+									<p style="font-size:15px;">
+										@InProceedings{batraProcX2024,<br>
+										author = {Batra, Anil and Sevilla-Lara, Laura and Rohrbach, Marcus and Keller, Frank},<br>
+										title = {Predicting Implicit Arguments in Procedural Video Instructions},<br>
+										booktitle = {UnderReview},<br>
+										year = {2025} <br>
+										}
+									</p>
+								</div>
+								</pre>
+							</div>
+						</td>
+					</tr>
+					<tr>
 						<td width="25%" valign="top" align="center"><a href="images/sieve_n_swap.png">
 								<img src="images/sieve_n_swap.png" alt="sym" width="80%"
 									style="border-style: none"></a></td>
@@ -231,7 +283,7 @@
 								<em>European Conference on Computer Vision </em>(ECCV) 2024<br>
 							</p>
 							<div class="paper" id="cv2024">
-								<a href="https://arxiv.org/pdf/2311.15964.pdf" target="" class="buttonTT">pdf</a>
+								<a href="https://arxiv.org/pdf/2311.15964.pdf" target="_blank" class="buttonTT">pdf</a>
 								<!-- <a href="#" target="" class="buttonTT">suppl</a> -->
 								<a data-toggle="collapse" data-parent="#cv2024" href="#cv2024_abstract-list"
 									class="buttonAA">abstract</a>
@@ -266,12 +318,14 @@
 								<div id="cv2024-list" class="panel-collapse collapse out"
 									style="background-color:#FFE0C2; padding:0% 3% 1% 3%; border-radius:10px;">
 									<p style="font-size:15px;">
-										@InProceedings{batraProcX2024,<br>
-										author = {Batra, Anil and Moltisanti, Davide and Sevilla-Lara, Laura and Rohrbach, Marcus and Keller, Frank},<br>
-										title = {Efficient Pre-training for Localized Instruction Generation of Videos},<br>
-										booktitle = {UnderReview},<br>
-										year = {2024} <br>
-										}
+										@inproceedings{batra2024efficient,<br>
+											title={Efficient Pre-training for Localized Instruction Generation of Procedural Videos},<br>
+											author={Batra, Anil and Moltisanti, Davide and Sevilla-Lara, Laura and Rohrbach, Marcus and Keller, Frank},<br>
+											booktitle={European Conference on Computer Vision},<br>
+											pages={347--363},<br>
+											year={2024},<br>
+											organization={Springer}<br>
+										  }
 
 									</p>
 								</div>
